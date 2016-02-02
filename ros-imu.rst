@@ -1,9 +1,10 @@
-Uygulamalar: IMU
-================
+IMU
+```
+
 Bu kısımda evarobot üzerinde bulunan minimu9 v3 sensörünün kullanımı anlatılmaktadır.
 
 IMU Sensörünü Çalıştırma
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Evarobot üzerindeki imu sensörünü çalıştırmadan önce Evarobot'a ssh ile bağlanılır.
 
@@ -37,7 +38,7 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 
 
 IMU Sensörünü Terminalden Okuma
--------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bilgisayar tarafında terminalden imu sensörünü okumak için senkronizasyon düğümlerini çalıştırmak gerekmektedir.
 
@@ -69,7 +70,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 	
 
 IMU Sensör icin Basit Subscriber Yazma
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Catkin çalışma alanında evarobot_imu_subs adında paket oluşturulur.
 
@@ -127,6 +128,8 @@ imu_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmektedir
 
 	  return 0;
 	}
+	
+Kod bu `linten <_static/cpp_codes/imu.cpp>`_ indirilebilir.
 
 Paket derlenirken yazdığımız cpp dosyasını derlemesi için CMakeLists.txt dosyasını aşağıdaki gibi düzenliyoruz.
 

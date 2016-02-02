@@ -1,9 +1,10 @@
-Uygulamalar: Bumper
-===================
+Bumper
+``````
+
 Bu kısımda evarobot üzerindeki bumper sensörlerinin nasıl kullanılacağı anlatılmaktadır.
 
 Bumper'ı Çalıştırma
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 evarobot içerisindeki sürücüler sayesinde robot üzerindeki bumper sensörleri okunabilmektedir. 
 Sensörlerin okuma bilgisi, çarpışma var ya da yok şeklinde bir değere sahiptir. 
@@ -38,7 +39,7 @@ Bilgisayar ile evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 
 
 Bumper'ı Terminalden Okuma
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bilgisayar tarafında terminalden bumper sensörlerini okumak için senkronizasyon düğümlerini çalıştırmak gerekmektedir.
 
@@ -68,7 +69,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 	
 	
 Bumper için Basit Subscriber Yazma
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Catkin çalışma alanında evarobot_bumper_subs adında paket oluşturulur.
 
@@ -133,6 +134,8 @@ bumper_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmekte
 	  return 0;
 	}
 
+Kod bu `linten <_static/cpp_codes/bumper.cpp>`_ indirilebilir.
+
 Paket derlenirken yazdığımız cpp dosyasını derlemesi için CMakeLists.txt dosyasını aşağıdaki gibi düzenliyoruz.
 
 ::
@@ -175,5 +178,5 @@ Yazdığımız bumper_listener düğümünü aşağıdaki gibi çalıştırıld�
 	> rosrun evarobot_bumper_subs bumper_listener	
 	
 	
-	
+.. include:: ros-kizilotesi.rst
 	

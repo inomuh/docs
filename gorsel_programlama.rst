@@ -1,5 +1,6 @@
 Görsel Programlama
 ==================
+
 Görsel programlama kullanıcılara blokları bir araya getirerek kod yazma imkanı sağlayan sistemdir.
 Bu kısımda evarobot için özelleştirilmiş `Google Blockly <https://developers.google.com/blockly/>`_ kullanılarak hazırlanan görsel programlama anlatılmaktadır.
 Görsel programlama sayesinde daha önce hiç programlama ile uğraşmamış ya da programlamaya yeni başlayan kişiler rahatlıkla kodlama yapabilmektedir. 
@@ -9,6 +10,7 @@ Hazırlanan paket `evablockly_ros <https://github.com/inomuh/evablockly_ros>`_ o
 
 Başlangıç
 ---------
+
 evablockly_ros'u çalıştırmak için adımlar;
 
 - Kodun indirilmesi: https://github.com/inomuh/evablockly_ros
@@ -39,11 +41,13 @@ evablockly_ros'u çalıştırmak için adımlar;
 
 Kullanım
 --------
+
 evablockly_ros evarobot'u sürmek ve kontrol etmek için çeşitli görsel plokları içermektedir.
 Hazırlanan bloklar başka robotlar içinde kullanılabilir fakat test edilmemiştir.
 Bloklar ROS-Communication, ROS-Sensors ve ROS-Behaviours olmak üzere 3 kategoriye ayrılmıştır.
 
 * **ROS-Communication**
+
 Bu kategori ROS ile haberleşme ile ilgili blokları içermektedir. Blokların işlevleri aşağıda listelenmektedir.
 
  - CONNECT TO ROS: ROS sunucusuna bağlanmayı sağlar.
@@ -62,6 +66,7 @@ Bu kategori ROS ile haberleşme ile ilgili blokları içermektedir. Blokların i
    
    
 * **ROS-Sensors**
+
 Bu kategori sensör ile ilgili ROS bloklarını içermektedir. Blokların işlevleri aşağıda listelenmektedir.
 
  - GET RANGE VALUE:  sensor_msgs/Range mesaj tipinde yer alan verilerden seçileni döndürür.
@@ -82,6 +87,7 @@ Bu kategori sensör ile ilgili ROS bloklarını içermektedir. Blokların işlev
    
 
 * **ROS-Behaviours**
+
 Bu kategori davranış tabanlı ROS bloklarını içermektedir. Blokların işlevleri aşağıda listelenmektedir.
 
  - TELEOP: Bu blok klavye üzerindeki yön tuşlarını dinleyerek basılan tuşa göre robot hareketini gerçekleştirir. 
@@ -102,7 +108,9 @@ Bu kategori davranış tabanlı ROS bloklarını içermektedir. Blokların işle
 
 Örnekler
 --------
+
 * **Sonar sensörüne abone olma**
+
 Aşağıdaki şekilde sonar sensörüne nasıl abone olunacağı gösterilmektedir.
 İlk olarak ROS sunucusuna bağlanma, ardından mesaj tipi ve ismi ile abone oluşturma, daha sonra okunan verileri gösterilmesi işlemleri gerçekleştirilmiştir.
 
@@ -111,6 +119,7 @@ Aşağıdaki şekilde sonar sensörüne nasıl abone olunacağı gösterilmekted
    :figclass: align-centered
    
 * **Kızılötesi sensörüne abone olma**
+
 Benzer şekilde kızılötesi sensörüne nasıl abone olunacağı gösterilmektedir.
 
 .. figure:: _static/sub_infrared.jpg
@@ -119,6 +128,7 @@ Benzer şekilde kızılötesi sensörüne nasıl abone olunacağı gösterilmekt
 
 
 * **Bumper sensörüne abone olma**
+
 Benzer şekilde bumper sensörüne nasıl abone olunacağı gösterilmektedir.
 
 .. figure:: _static/sub_bumper.jpg
@@ -127,6 +137,7 @@ Benzer şekilde bumper sensörüne nasıl abone olunacağı gösterilmektedir.
 
 
 * **Enkoder sensörüne abone olma**
+
 Benzer şekilde enkoder sensörüne nasıl abone olunacağı gösterilmektedir.
 
 .. figure:: _static/sub_odom.jpg
@@ -135,9 +146,19 @@ Benzer şekilde enkoder sensörüne nasıl abone olunacağı gösterilmektedir.
 
 
 * **Herhangi bir mesaja abone olma**
+
 Benzer şekilde herhangi bir mesaja nasıl abone olunacağı gösterilmektedir.
 Bu yöntemde abone olunacak mesaj ve mesaj tipi elle girilmektedir.
 
 .. figure:: _static/sub_any.jpg
+   :align: center
+   :figclass: align-centered
+  
+   
+* **Mesaj Yayınlama**
+
+Aşağıdaki şekilde cmd_vel topiğinden geometry_msgs/Twist tipinde mesajın nasıl yayınlanacağı gösterilmektedir.
+
+.. figure:: _static/pub_cmd_vel.jpg
    :align: center
    :figclass: align-centered

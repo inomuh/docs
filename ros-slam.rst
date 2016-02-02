@@ -1,16 +1,17 @@
-Uygulamalar: SLAM Harita Oluşturma
-==================================
+SLAM Harita Oluşturma
+`````````````````````
+
 Bu kısımda gmapping ve hector_slam kullanarak SLAM harita oluşturma anlatılmaktadır.
 
 Sistem Tanıtımı
----------------
+~~~~~~~~~~~~~~~
 
 .. figure:: _static/evarobot_kullanim-03.png
    :align: center
    :figclass: align-centered
 
 hector_slam Kullanarak Harita Çıkarma
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SLAM yapmamız için gerekli olan düğümleri çalıştıran evarobot_slam.launch dosyasını açalım. 
 evarobot_slam.launch dosyası hector_slam'in parametrelerini ayarlarak çalıştırmaktadır.

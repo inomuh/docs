@@ -1,9 +1,10 @@
-Uygulamalar: Kızılötesi
-=======================
+Kızılötesi
+``````````
+
 Bu kısımda evarobot üzerindeki kızılötesi sensörlerinin nasıl kullanılacağı anlatılmaktadır.
 
 Kızılötesini Çalıştırma
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Evarobot üzerindeki kızılötesi sensörleri çalıştırmadan önce Evarobot'a ssh ile bağlanılır.
 
@@ -35,7 +36,7 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 	> roslaunch master_sync_fkie master_sync.launch
 
 Kızılötesi Sensörlerini Terminalden Okuma
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bilgisayar tarafında terminalden kızılötesi sensörlerini okumak için senkronizasyon düğümlerini çalıştırmak gerekmektedir.
 
@@ -69,7 +70,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 
 
 Kızılötesi Sensör için Basit Subscriber Yazma
----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Catkin çalışma alanında evarobot_infrared_subs adında paket oluşturulur.
 
@@ -129,6 +130,8 @@ infrared_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmek
 	  return 0;
 	}
 
+Kod bu `linten <_static/cpp_codes/kizilotesi.cpp>`_ indirilebilir.
+
 Paket derlenirken yazdığımız cpp dosyasını derlemesi için CMakeLists.txt dosyasını aşağıdaki gibi düzenliyoruz.
 
 ::
@@ -173,7 +176,7 @@ Yazdığımız infrared_listener düğümünü aşağıdaki gibi çalıştırıl
 	> rosrun evarobot_infrared_subs infrared_listener
 
 Kızılötesi Sensör Verisini Görselleştirme
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 

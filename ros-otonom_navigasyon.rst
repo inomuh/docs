@@ -1,10 +1,11 @@
 Uygulamalar: Otonom Evarobot Navigasyonu
-========================================
+````````````````````````````````````````
+
 Bu kısımda daha önceden çıkartılmış haritada evarobot'un otonom robot navigasyonu anlatılmaktadır.
 
 
 Sistem Tanıtımı
----------------
+~~~~~~~~~~~~~~~
 
 .. figure:: _static/evarobot_kullanim-03.png
    :align: center
@@ -12,7 +13,7 @@ Sistem Tanıtımı
 
 
 Navigasyon
-----------
+~~~~~~~~~~
 
 evarobot'u otonom hareket ettirmek için önceden ortamın haritasını çıkarmış olmanız gerekmektedir.
 Gerçek ortamda, Evarobot'un otonom navigasyonu için aşağıdaki kodu terminalde çalıştırmanız yeterli olacaktır. 

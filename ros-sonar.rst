@@ -1,9 +1,10 @@
-Uygulamalar: Sonar
-==================
+Sonar
+`````
+
 Bu kısımda evarobot üzerindeki sonar sensörlerinin nasıl kullanılacağı anlatılmaktadır.
 
 Sonar Sensörünü Çalıştırma
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Evarobot üzerindeki sonarları çalıştırmadan önce Evarobot'a ssh ile bağlanılır.
 
@@ -36,7 +37,7 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 
 
 Sonar Sensörlerini Terminalden Okuma
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bilgisayar tarafında terminalden sonar sensörlerini okumak için senkronizasyon düğümlerini çalıştırmak gerekmektedir.
 
@@ -69,7 +70,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 	> rostopic info /sensor/sonar0
 
 Sonar Sensör icin Basit Subscriber Yazma
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Catkin çalışma alanında evarobot_sonar_subs adında paket oluşturulur.
 
@@ -129,6 +130,8 @@ sonar_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmekted
 	  return 0;
 	}
 
+Kod bu `linten <_static/cpp_codes/sonar.cpp>`_ indirilebilir.
+
 Paket derlenirken yazdığımız cpp dosyasını derlemesi için CMakeLists.txt dosyasını aşağıdaki gibi düzenliyoruz.
 
 ::
@@ -175,7 +178,7 @@ Yazdığımız sonar_listener düğümünü aşağıdaki gibi çalıştırıldı
 
 
 Sonar Sensör Verisini Görselleştirme
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 

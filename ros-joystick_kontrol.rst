@@ -1,5 +1,6 @@
-Uygulamalar: Joystick ile Kontrol
-=================================
+Joystick ile Kontrol
+````````````````````
+
 Bu kısımda evarobotun joystick ile kontrolü anlatılmaktadır.
 
 

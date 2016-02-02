@@ -7,6 +7,7 @@ sitesini ziyaret edebilirsiniz.
 
 Başlamadan Önce
 ---------------
+
 * **Geliştirme Araçları** 
  
  - evarobot'a bağlanmak için bir bilgisayar gereklidir. Robota bağlantı
@@ -27,6 +28,7 @@ Başlamadan Önce
 
 evarobot Tanıtım
 ----------------
+
 Evarobot, mekaniği, donanımı ve yazılımı ile tamamen yerli üretim olarak 
 İnovasyon Mühendislik tarafından geliştirilmiştir. Bu kılavuzda Evarobot'un 
 özellikleri ve üzerinde çalışan donanım EKB(Elektronik Kontrol Birimi) 
@@ -138,6 +140,7 @@ Sensör Kartı Özellikleri
  - (!) Sensör kartı özelliklerinin detayı için `IM-SENS10 <http://www.evarobot.com/dokuman/20150826-IM-SENS10.pdf>`_ kartını inceleyiniz. 
    
 * **evarobot Simülasyon**
+
 evarobot ile gerçek ortam üzerinde çalışmalar yapabilmenin yanında 3 boyutlu 
 simülasyon ortamı kullanarak da araştırmalar yapılabilmektedir. İçerisinde 4 tane 
 fizik motoru çalıştırabilen 3 boyutlu simülasyon ortamı olan Gazebo'da evarobot 
@@ -145,12 +148,14 @@ modeli hazır olarak sizi beklemektedir. Simülasyon ortamında Evarobot ile nas
 çalışabileceğinizi anlatan uygulamaları ilerleyen kılavuzlardan edinebilirsiniz.
 
 * **evarobot Kullanım Alanları**
+
 Evarobot birden fazla disiplinlerin uygulamaya yönelik çalışmalarında 
 kullanılabilecek bir platformdur. Bunlara örnek olarak yapay zeka, görüntü 
 işleme, kontrol gibi çalışma alanları verilebilir.
 
 evarobot Kullanımı
 ------------------
+
 evarobot ile bir çok farklı varyasyonlarda iletişime geçilerek çalışılabilmektedir. 
 Bu kılavuzda başlangıç seviyesinde önerdiğimiz iki varyasyon üzerinde durulacaktır. 
 Örnekte tekli robot ile çalışmak için ayarlamalar yapılmaktadır. Çoklu robotlar 

@@ -1,6 +1,5 @@
-Uygulamalar: Lidar
-==================
-
+Lidar
+`````
 Bu kısımda evarobot üzerindeki RPLidar sensörünün nasıl kullanılacağı anlatılmaktadır.
 
 

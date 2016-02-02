@@ -1,5 +1,6 @@
-Uygulamalar: Kinect
-===================
+Kinect
+``````
+
 Bu kısımda Kinect verisinin kullanılması ve görselleştirilmesi anlatılmaktadır.
 Kinect'i çalıştırmak için OpenNI ve NITE kurmamız gerekmektedir.
 İlgili yazılımları kurmadan önce bağlı oldukları kütüphaneleri indiriyoruz.

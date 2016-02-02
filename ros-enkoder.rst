@@ -1,9 +1,10 @@
-Uygulamalar: Enkoder
-====================
+Enkoder
+```````
+
 Bu kısımda enkoderlerden veri okuma ve odom konum hesabı anlatılmaktadır.
 
 Enkoder Sensörünü Çalıştırma
-----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Evarobot üzerindeki enkoder sensörleri çalıştırmadan önce Evarobot'a ssh ile bağlanılır.
 
@@ -36,7 +37,7 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 
 
 Enkoder Sensörlerini Terminalden Okuma
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Bilgisayar tarafında terminalden enkoderlerden gelen veri ile hesaplanan konum ve hız bilgilerini okumak için senkronizasyon düğümlerini çalıştırmak gerekmektedir.
 
@@ -66,7 +67,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 
 
 Enkoder Konum Bilgisini Okumak icin Basit Subscriber Yazma
-----------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Catkin çalışma alanında evarobot_odom_subs adında paket oluşturulur.
 
@@ -126,6 +127,8 @@ odom_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmektedi
 
 	  return 0;
 	}
+	
+Kod bu `linten <_static/cpp_codes/enkoder.cpp>`_ indirilebilir.
 
 Paket derlenirken yazdığımız cpp dosyasını derlemesi için CMakeLists.txt dosyasını aşağıdaki gibi düzenliyoruz.
 

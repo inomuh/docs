@@ -9,26 +9,27 @@ Bu doküman `PDF <http://docs.evarobot.com/evarobot.pdf>`_ olarak indirilebilir.
 .. toctree::
    :maxdepth: 2
 
-   giriş
-   hazırlık
-   çalıştırma
+   giris
+   hazirlik
+   calistirma
     
-Uygulamalar
------------
+ROS Uygulamaları
+----------------
 
 .. toctree::
    :maxdepth: 2
 
-   bumper
-   kızılötesi
-   sonar
-   lidar
-   enkoder
-   imu
-   kinect
-   joystick_kontrol
-   slam
-   otonom_navigasyon
+   ros-uygulamalari
+
+   
+MATLAB Uygulamaları
+-------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   matlab-uygulamalari
+   
    
 Diğer
 -----
@@ -36,19 +37,12 @@ Diğer
 .. toctree::
    :maxdepth: 2
    
-   benzetim_ortamı
+   benzetim_ortami
    evamobil
-   görsel_programlama
+   gorsel_programlama
    uplat
-   matlab_kütüphanesi
-   evaçocuk
+   matlab_kutuphanesi
+   evacocuk
    api
    sss
-
-Linkler
-=======
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   
