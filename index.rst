@@ -44,5 +44,5 @@ Diğer
    matlab_kutuphanesi
    evacocuk
    api
+   ariza
    sss
-   

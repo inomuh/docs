@@ -76,7 +76,7 @@ Lazer					1 X Hokuyo URG-04LX
 
 
 * **Elektronik Kontrol Birimi (IM-EKB10)**
-M-EKB10 mobil robot uygulamaları için geliştirilmiş ROS (Robot Operating System) 
+IM-EKB10 mobil robot uygulamaları için geliştirilmiş ROS (Robot Operating System) 
 uyumlu kontrol kartıdır. Kart; IM-REG10, IM-DRV10, IM-ADP10 ve IM-SENS10 kartları 
 olmak üzere 4 katlı yapıdadır. 4 katlı yapıda güç, motor sürücü, Raspberry Pi ve 
 sensör katları yer alır. Değiştirilebilir katlı yapısı sayesinde farklı 

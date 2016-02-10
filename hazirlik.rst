@@ -162,7 +162,16 @@ Evarobot PC paketi indirilir ve derlenir.
 	# evarobot pc paketi indirilir.
 	> git clone https://github.com/inomuh/evapc_ros.git -b eva50
 
-	# evarobot pc paketi derlenir.
+Evarobot simulasyon ortamını kurmak için evarobot_simulation paketinin indirilmesi gerekmektedir.
+İlgili bilgisayarda simulasyon ortamını kurmadıysanız bu adımı geçebilirsiniz.
+
+::
+	> git clone https://github.com/inomuh/evarobot_simulator.git
+	
+	
+Indirilen paketler derlenir.
+
+::
 	> cd ~/catkin_ws
 	> catkin_make
 
@@ -179,7 +188,9 @@ Takip eden bölümde bağlanmak istediğiniz PC'nin ağ ayarlarını yapmak içi
 gerekenler anlatılacaktır. Anlatım sırasında kullanılacak PC üzerinde Ubuntu 14.04 
 işletim sistemi çalışmaktadır ve ROS versiyonu olarak Indigo kullanılmaktadır.
 
-Evarobot'a kablosuz olarak bağlanmak için SSH kullanılacaktır. 
+Bilgisayarınızı evarobot üzerinde çalıştıracak iseniz ethernet kablosu ile bağlanmanız tavsiye edilir.
+
+Evarobot'a bağlanmak için SSH kullanılacaktır.
 Bilgisayarınıza kurmak için terminalde aşağıdaki kodu çalıştırmalısınız.
 
 ::
@@ -200,7 +211,7 @@ Aşağıdaki kodu terminalde çalıştırdığınızda bilgisayarınızın adın
 Resimde de gördüğünüz gibi örneğimizde kullanacağımız bilgisayarın hostname'i evarobotserver. 
 Uygulamada <hostname> yazan yere biz evarobotserver yazacağız. Sizde kendi hostname'inizi yazmanız gerekmektedir.
 
-bashrc isimli dosyanın içerisinde ROS_HOSNAME ve ROS_MASTER_URI değişkenlerini tanımlamamız gerekmedir. 
+bashrc isimli dosyanın içerisinde ROS_HOSTNAME ve ROS_MASTER_URI değişkenlerini tanımlamamız gerekmedir. 
 Bunun için gedit editörü ile ilgili dosyayı açıyoruz.
 
 ::
@@ -251,26 +262,6 @@ Sizde kendi bilgisayarınızın hostname'ine uygun olarak düzeltme yapmalısın
 	192.168.3.70 evarobotserver
 	192.168.3.10 evarobotDSK
 
-Çoklu roscore çalıştırmak için multimaster_fkie ros paketi kullacağız. Bilgisayar Kurulumu 
-uygulamasında bu paketin indirilmesi anlatılmaktadır. Aşağıdaki kod ile düzeltme yapacağımız 
-launch dosyasını gedit editörü ile açıyoruz.
-
-::
-
-	> roscd master_discovery_fkie/launch/
-	> gedit master_discovery.launch
-	
-Açılan editörde aşağıdaki bilgiyi içeren satırı,
-
-::
-
-	<param name="mcast_group" value="226.0.0.0" />
-
-aşağıdaki gibi değiştirip, kaydederek kapatıyoruz.
-
-::
-
-	<param name="mcast_group" value="224.0.0.0" />
 
 evarobot ile bilgisayar arasında zaman eşitlemesinin yapılması gerekmektedir. 
 Bunun için bilgisayarı ntp server olarak ayarlayacağız. 
@@ -461,3 +452,4 @@ Böylece Evarobot Ağ Ayarlarını tamamlamış bulunmaktayız.
 Donanımsal Kurulum Talimatları
 ------------------------------
 
+..... İçerik Hazırlanıyor ......
