@@ -22,4 +22,4 @@ Motorlara Hız Verme
 	% with the ROS network. Shut down the global node and disconnect from the evarobot.
 	rosshutdown
 
-Kod bu `linten <_static/matlab_codes/matlab_hiz.m>`_ indirilebilir.
+Kod bu `linten <_static/matlab_codes/matlab_hiz.m.zip>`_ indirilebilir.

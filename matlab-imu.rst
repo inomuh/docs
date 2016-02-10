@@ -50,4 +50,4 @@ IMU Verilerinin Okunması
 	% with the ROS network. Shut down the global node and disconnect from the evarobot.
 	rosshutdown
 	
-Kod bu `linten <_static/matlab_codes/matlab_imu.m>`_ indirilebilir.
+Kod bu `linten <_static/matlab_codes/matlab_imu.m.zip>`_ indirilebilir.
