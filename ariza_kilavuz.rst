@@ -39,10 +39,16 @@ Log levelinin belirlendiği satır aşağıdaki gibi değiştirin.
 :: 
 
 	log4j.logger.ros=DEBUG
+
+Loglama işlemine başlamadan önce mevcut log verileri aşağıdaki komut ile temizlenir.
+	
+::
+		
+		rosclean -purge
 	
 Loglanmak istenen paketler roslaunch komutu ile çalıştırın.
 Logları içeren klasöre aşağıdaki komut ile ulaşın ve klasör içeriğini listeleyin.
-Loglar log isimli klasör içerinde tutulmaktadır.
+Loglar log isimli klasör içerinde tutulmaktadır. Bu klasör sıkıştırılarak hata çözümü için gönderilecek maile eklenmelidir.
 
 ::
 

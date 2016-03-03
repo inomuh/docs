@@ -2,6 +2,9 @@ Evarobot Arıza Tespiti
 ``````````````````````
 
 Evarobot arıza tespiti için yapılması gerekenlerden bahsedilecektir.
+Aşağıdaki hatalardan biri veya birkaçı karşılaşılması durumunda karşılaşılan soruna ait akış diyagramının gerçekleştirilmesi gerekmektedir.
+Sorunun çözülmemesi durumunda karşılaşılan arıza kodu ve log klasörünü iletişim ve taranmış fatura bilgileri ile birlikte destek@evarobot.com adresine gönderiniz.
+Log dosyasının nasıl oluşturulacağı Evarobot Arıza->Evarobot Arıza Klavuzları->TTL03 Log Alma kısmında anlatılmaktadır.
 
 TBS01 Güç Butonu Ledi Yanmıyor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
