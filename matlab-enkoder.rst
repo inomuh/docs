@@ -30,7 +30,7 @@ Enkoder Verilerini Okuma
 	% ROS initilization
 	rosinit('192.168.3.16')
 
-	% Create an instance of the ExampleHelperTurtleBotCommunicator class, 
+	% Create an instance of the evarobotCommunicator class, 
 	% which allows for easy control of the evarobot
 	evarobot = evarobotCommunicator();
 

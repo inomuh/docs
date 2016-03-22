@@ -21,9 +21,15 @@ Bu fonksiyonlar kütüphane sınıfından public olarak erişilebilir durumdadı
  - disableLaser       - Lazer sensöründen aboneliği kaldırır
  - enableLidar        - Lidar sensörüne abone olur
  - disableLidar       - Lidar sensöründen aboneliği kaldırır
- - enableCamera       - Kamera (Kinect ya da Asus xtion pro) sensörüne abone olur
- - disableCamera      - Kamera sensöründen aboneliği kaldırır
- - setVelocity        - Paraemtre olarak girilen açısal ve doğrusal hız değerlerini robota uygular
+ - enableCameraDepthImage	- Kamera sensörünün derinlik fotoğrafı bilgisine abone olur
+ - enableCameraDepthImage	- Kamera sensörünün derinlik fotoğrafı bilgisinden aboneliği kaldırır
+ - enableCameraDepthPoints	- Kamera sensörünün derinlik noktaları bilgisine abone olur
+ - enableCameraDepthPoints	- Kamera sensörünün derinlik noktaları bilgisinden aboneliği kaldırır
+ - enableCameraIrImage		- Kamera sensörünün kızılötesi fotoğrafı bilgisine abone olur
+ - enableCameraIrImage		- Kamera sensörünün kızılötesi fotoğrafı bilgisinden aboneliği kaldırır
+ - enableCameraRgbImageRaw 	- Kamera sensörünün renkli fotoğraf bilgisine abone olur
+ - enableCameraRgbImageRaw	- Kamera sensörünün renkli fotoğraf bilgisinden aboneliği kaldırır
+ - setVelocity        - Parametre olarak girilen açısal ve doğrusal hız değerlerini robota uygular
  
 
 * **Değerler**
