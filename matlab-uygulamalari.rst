@@ -1,6 +1,8 @@
 MATLAB Uygulamaları
 ===================
 
+MATLAB uygulamaları geliştirilirken `evarobotCommunicator <_static/matlab_codes/evarobotCommunicator.m.zip>`_ sınıfı kullanılmıştır.
+
 .. include:: matlab-bumper.rst
 
 .. include:: matlab-kizilotesi.rst

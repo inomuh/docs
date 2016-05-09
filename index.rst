@@ -30,6 +30,15 @@ MATLAB Uygulamaları
 
    matlab-uygulamalari
    
+
+Gezgin Robot Nesne Bulma Yarışması
+----------------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   eva-yarisma-2016
+   
    
 Diğer
 -----
