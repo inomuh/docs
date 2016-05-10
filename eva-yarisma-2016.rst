@@ -84,8 +84,6 @@ yolu izlenerek ulaşılabilir. Yarışmada robot 0,0 konumunda -90.0 derecelik b
 Kurallar
 ````````
 
-* **Linux**
-
 * **Yarışmada evarobot gezgin robot platformu kullanılacaktır.**
 * **Yarışma Gazebo benzetim ortamında düzenlenecektir.**
 * **Gazebo benzetim ortamı, yarışmada sağlanacak sunucu bilgisayar üzerinde çalışacaktır.**
@@ -141,7 +139,11 @@ GAZEBO5 Kurulumu
 ~~~~~~~~~~~~~~~~
 
 Gazebo5 kurulumuna `linkten <http://gazebosim.org/tutorials?cat=install&tut=install_ubuntu&ver=5.0>`_ erişebilirsiniz.
-$ wget -O /tmp/gazebo5_install.sh http://osrf-distributions.s3.amazonaws.com/gazebo/gazebo5_install.sh; sudo sh /tmp/gazebo5_install.sh
+
+::
+
+	> wget -O /tmp/gazebo5_install.sh http://osrf-distributions.s3.amazonaws.com/gazebo/gazebo5_install.sh; 
+	> sudo sh /tmp/gazebo5_install.sh
 
 EVAROBOT Yazılımlarının Kurulumu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -339,6 +341,42 @@ MATLAB üzerinde, bulunan bir nesneye ait konumun, servis ile sunucu bilgisayar 
 Kod bu `linten <_static/matlab_codes/matlab_check_object.m.zip>`_ indirilebilir.
 
 evarobotun MATLAB üzerinden kontrolü ve sensörlerden verilerin okunması ile ilgili örnekler "MATLAB Uygulamaları" kısmında verilmiştir.
+
+C++'da Servisin Çağrılması
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+C++ üzerinde, bulunan bir nesneye ait konumun, servis ile sunucu bilgisayar üzerinde çalışan yazılıma gönderilmesini sağlayan kod aşağıdaki gibidir.
+
+::
+
+	#include "ros/ros.h"
+	#include "im_msgs/CheckObject.h"
+
+	int main(int argc, char **argv)
+	{
+	  ros::init(argc, argv, "eva_yarisma");
+	  ros::NodeHandle n;
+	  ros::ServiceClient client = n.serviceClient<im_msgs::CheckObject>("/evarobot_competition/CheckObject");
+	  im_msgs::CheckObject srv;
+	  srv.request.object_pose.x = 1.23;
+	  srv.request.object_pose.y = 4.56;
+	  srv.request.object_pose.z = 0.12;
+	  srv.request.color = 1;
+	  
+	  if (client.call(srv))
+	  {
+		ROS_INFO_STREAM("Dogru mu:\t" << srv.response.ret);
+		ROS_INFO_STREAM("Kalan zaman:\t" << srv.response.remaining_time);
+		ROS_INFO_STREAM("Toplam bulunan:\t" << srv.response.achieved);
+	  }
+	  else
+	  {
+		ROS_ERROR("Hata olustu.");
+	  }
+
+	  return 0;
+	}
+
 
 Uygulamalı ROS Eğitimi
 ``````````````````````
