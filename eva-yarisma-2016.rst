@@ -7,6 +7,11 @@ Bu kısımda Gezgin Robot Nesne Bulma Yarışmasına ait bilgiler verilmektedir.
 Otomatik Kontrol Ulusal Toplantısı (TOK2016) sırasında gezgin robotlara yönelik simülasyon 
 yarışması düzenlenecektir. Benzetim ortamı olarak `Gazebo5 <http://gazebosim.org/>`_ kullanılacaktır.
 
+.. figure:: _static/callforpaper.png
+   :align: center
+   :figclass: align-centered
+
+
 Amaç
 ````
 
@@ -14,6 +19,25 @@ Yarışma kapsamında ortama kırmızı, yeşil ve mavi renklerde 5’er tane ol
 Bu nesnelerin büyüklükleri 0.1-0.25m arasında ve küp, silindir ya da küre şeklinde olacaktır. 
 Yarışmadaki amaç bu nesneleri en kısa sürede bulmaktır. 
 
+
+Ön Kayıt
+````````
+Gezgin Robot Nesne Bulma Yarışması'na ön kayıt yaptırmak için `ön kayıt formu <https://docs.google.com/forms/d/1-t00Ou3FaWqLkY_I-WL-To8NY-GbHo0SvdzfSH02MH4/viewform?c=0&w=1>`_ nu doldurmanız gerekmektedir.
+
+
+Önemli Tarihler
+```````````````
+
+============================================= ============================================
+Yarışma Detaylarının Verilmesi								09 Mayıs 2016
+Başvuru Tarihleri															09 Mayıs 2016 - 13 Temmuz 2016
+Ücretsiz Ön Kayıt için Son Tarih							13 Temmuz 2016
+Uygulamalı ROS Eğitimi(opsiyonel)							25 - 27 Temmuz 2016
+Kesin Kayıt																		1 Ağustos 2016 - 1 Eylül 2016
+Sunum Tarihi																	29 Eylül 2016
+Yarışma Tarihi																30 Eylül 2016
+Ödül Töreni																		30 Eylül 2016
+============================================= ============================================
 
 Simülasyon Ortamı
 `````````````````
