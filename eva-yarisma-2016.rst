@@ -22,7 +22,7 @@ Yarışmadaki amaç bu nesneleri en kısa sürede bulmaktır.
 
 Ön Kayıt
 ````````
-Gezgin Robot Nesne Bulma Yarışması'na ön kayıt yaptırmak için `ön kayıt formu <https://docs.google.com/forms/d/1-t00Ou3FaWqLkY_I-WL-To8NY-GbHo0SvdzfSH02MH4/viewform?c=0&w=1>`_ nu doldurmanız gerekmektedir.
+Gezgin Robot Nesne Bulma Yarışması'na ön kayıt yaptırmak için `ön kayıt formu <http://docs.evarobot.com/OnKayit.docx>`_ 'nu doldurarak tok2016yarisma@gmail.com adresine göndermeniz gerekmektedir.
 
 
 Önemli Tarihler
