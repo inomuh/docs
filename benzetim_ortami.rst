@@ -8,7 +8,7 @@ Evarobot'u Gazebo'da çalıştırmak için aşağıdaki gibi launch dosyasını 
 
 ::
 
-	> roslaunch evarobot_description evarobot.launch
+	> roslaunch evarobot_gazebo evarobot.launch
 
 .. figure:: _static/gazebo1.png
    :align: center
@@ -140,7 +140,7 @@ Gazebo simülasyon ortamında, Evarobot'un otonom navigasyonu için aşağıdaki
 
 ::
 
-	> roslaunch evarobot_navigation gazebo_navigation.launch world_path:=$(rospack find evarobot_description)/worlds/UPlat.sdf
+	> roslaunch evarobot_navigation gazebo_navigation.launch world_path:=$(rospack find evarobot_gazebo)/worlds/UPlat.sdf
 
 evarobot'a otonom gitmesini istediğiniz noktayı bu örnek için rviz üzerinden verebilirsiniz. 
 Bunun için rviz'de '2D Nav Goal' ile harita üzerinde işaretlemeniz yeterli olacaktır. 
