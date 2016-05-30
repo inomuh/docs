@@ -11,7 +11,7 @@ Evarobot üzerindeki imu sensörünü çalıştırmadan önce Evarobot'a ssh ile
 ::
 
 	# evarobot
-	> ssh pi@evarobotDSK
+	> ssh pi@evarobot
 	> sudo -s
 
 IMU sensörünü çalıştırmak için aşağıdaki kodu terminalde çalıştırmak yeterli olacaktır. 
@@ -28,13 +28,13 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 ::
 
 	# evarobot
-	> roslaunch master_discovery_fkie master_discovery.launch
+	> roslaunch evarobot_start master_discovery.launch
 
 
 ::
 
 	# evarobot
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evarobot_start master_sync.launch
 
 
 IMU Sensörünü Terminalden Okuma
@@ -45,19 +45,14 @@ Bilgisayar tarafında terminalden imu sensörünü okumak için senkronizasyon d
 ::
 
 	# pc
-	> roslaunch master_discovery_fkie master_discovery.launch
-
-::
-
-	# pc
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evapc_start sync.launch
 
 Başka bir terminalde rostopic komutu ile imu verisi okunabilir.
 
 ::
 
 	# pc
-	> rostopic echo /imu_data
+	> rostopic echo /imu
 
 Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 
@@ -65,7 +60,7 @@ Topik hakkında bilgi almak için ise aşağıdaki kod kullanılır.
 ::
 
 	# pc
-	> rostopic info /imu_data
+	> rostopic info /imu
 	
 	
 
@@ -122,7 +117,7 @@ imu_listener.cpp dosyasının içerisine yazılacak kod aşağıda verilmektedir
 	   * Subscriber tanımlanıyor.
 	   * İlk parametre olarak dinlenecek topiğin adı, ardından bufferın büyüklüğü ve callback fonksiyonu tanımlanmaktadır.
 	   */
-	  ros::Subscriber sub = n.subscribe("imu_data", 1000, chatterCallback);
+	  ros::Subscriber sub = n.subscribe("imu", 1000, chatterCallback);
 
 	  ros::spin();
 

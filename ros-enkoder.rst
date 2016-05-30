@@ -11,7 +11,7 @@ Evarobot üzerindeki enkoder sensörleri çalıştırmadan önce Evarobot'a ssh 
 ::
 
 	# evarobot
-	> ssh pi@evarobotDSK
+	> ssh pi@evarobot
 	> sudo -s
 
 Enkoder sensörleri çalıştırmak için aşağıdaki kodu terminalde çalıştırmak yeterli olacaktır. 
@@ -28,12 +28,12 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 ::
 
 	# evarobot
-	> roslaunch master_discovery_fkie master_discovery.launch
+	> roslaunch evarobot_start master_discovery.launch
 
 ::
 
 	# evarobot
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evarobot_start master_sync.launch
 
 
 Enkoder Sensörlerini Terminalden Okuma
@@ -44,12 +44,7 @@ Bilgisayar tarafında terminalden enkoderlerden gelen veri ile hesaplanan konum 
 ::
 
 	# pc
-	> roslaunch master_discovery_fkie master_discovery.launch
-
-::
-
-	# pc
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evapc_start sync.launch
 
 Başka bir terminalde rostopic komutu ile hesaplanan robotun bağıl konum ve hız okunabilir.
 

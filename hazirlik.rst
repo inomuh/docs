@@ -160,18 +160,20 @@ Evarobot PC paketi indirilir ve derlenir.
 	> cd ~/catkin_ws/src
 
 	# evarobot pc paketi indirilir.
-	> git clone https://github.com/inomuh/evapc_ros.git -b eva50
+	> git clone https://github.com/inomuh/evapc_ros.git -b indigo-devel
 
 Evarobot simulasyon ortamını kurmak için evarobot_simulation paketinin indirilmesi gerekmektedir.
 İlgili bilgisayarda simulasyon ortamını kurmadıysanız bu adımı geçebilirsiniz.
 
 ::
-	> git clone https://github.com/inomuh/evarobot_simulator.git
+
+	> git clone https://github.com/inomuh/evarobot_simulator.git -b indigo-devel
 	
 	
 Indirilen paketler derlenir.
 
 ::
+
 	> cd ~/catkin_ws
 	> catkin_make
 
@@ -251,16 +253,16 @@ ve hostname bilgilerini giriyoruz. Burada dikkat edilmesi gereken konu, aynı ip
 
 ::
 
-	192.168.3.70 <hostname>
-	192.168.3.10 evarobotDSK
+	192.168.10.60 <hostname>
+	192.168.10.10 evarobot
 
 Örnekte kullandığımız bilgisayar için aşağıdaki gibi ekleme yaptık. 
 Sizde kendi bilgisayarınızın hostname'ine uygun olarak düzeltme yapmalısınız.
 
 ::
 
-	192.168.3.70 evarobotserver
-	192.168.3.10 evarobotDSK
+	192.168.10.60 evarobotserver
+	192.168.10.10 evarobot
 
 
 evarobot ile bilgisayar arasında zaman eşitlemesinin yapılması gerekmektedir. 
@@ -290,7 +292,7 @@ Editörde 23. satıra aşağıdaki satırlar eklenir.
 
 ::
 
-	broadcast evarobotDSK
+	broadcast evarobot
 
 Bilgisayar bir ağda client gibi çalışarak internetten saatini güncellerken, 
 evarobot_wifi ağına girdiğinde ntp sunucu gibi çalışması için yeniden başlatmak gerekmektedir. 
@@ -309,16 +311,16 @@ NTP ağındaki bilgisayarlar hakkında bilgi almak için aşağıdaki kod kullan
 
 evarobot_wifi ağı için ip ayarlarının yapılması
 
-Bu kısımda evarobot_wifi ağından 192.168.3.70 ip'sini statik olarak almak için ayarlar yapacağız. 
+Bu kısımda evarobot_wifi ağından 192.168.10.60 ip'sini statik olarak almak için ayarlar yapacağız. 
 Evarobot'a güç verdiğinizde bir kaç dakika içerisinde evarobot_wifi isimli ağı görebilirsiniz. 
 
 Modem bilgileri: 
 
-SSID: evarobot_wifi 
+SSID: evarobot
 
 Şifre: inomuh2015 
 
-Aşağıdaki resimlerdeki 'evarobot_wifi' isimli ağa girilir. 
+Aşağıdaki resimlerdeki 'evarobot' isimli ağa girilir. 
 
 .. figure:: _static/evarobot_wifi1.png
    :align: center
@@ -342,7 +344,7 @@ Ağdan şu anda dhcp tarafından otomatik bir ip atandı. Aşağıdaki resimlerd
    :figclass: align-centered
    
 Açılan ekranda 'IPv4 Settings' sekmesi altında 'Method' Manual seçilerek 
-resimdeki gibi adresler eklenir. Address: 192.168.3.70 Netmask: 255.255.255.0 Gateway: 192.168.3.1 
+resimdeki gibi adresler eklenir. Address: 192.168.10.60 Netmask: 255.255.255.0 Gateway: 192.168.10.1 
 
 .. figure:: _static/evarobot_wifi5.png
    :align: center
@@ -360,7 +362,7 @@ Yeni girilen ayarların aktif olması için resimdeki gibi Wifi Enable ve ardın
 
 
 Eğer ayarlamalar hatasız bir şekilde yapıldı ise terminalde aşağıdaki kod çalıştırıldığında
-resimdeki gibi bilgisayarın 192.168.3.70 no ip'yi almış olması beklenmektedir.
+resimdeki gibi bilgisayarın 192.168.10.60 no ip'yi almış olması beklenmektedir.
 
 ::
 
@@ -377,11 +379,11 @@ bilgisayar tarafında yapılması gerekli olan ayarlamaları yapmış bulunmakta
 
 Evarobot ağ ayarlarını yapmadan önce Bilgisayar Ağ Ayarlarını yapmış olmasınız.
 
-evarobot_wifi ağına statik ip ile bağlandıktan sonra, ssh ile Evarobot'a bağlanılır. (Şifre: 12345)
+evarobot ağına statik ip ile bağlandıktan sonra, ssh ile Evarobot'a bağlanılır. (Şifre: 12345)
    
 ::
 
-	> ssh pi@evarobotDSK
+	> ssh pi@evarobot
 	
 Evarobot içerisindeki 'hosts' isimli dosyaya kendi bilgisayarımızın adını ve IP'sini 
 eklemek için açıyoruz. Evarobot'a ssh ile bağlandığımız için içeride görsel bir şey 
@@ -395,13 +397,13 @@ Aşağıdaki gibi eklemeye yapacağız. Hostname yerine bilgisayarımızın host
 
 ::
 
-	192.168.3.70 <hostname>
+	192.168.10.60 <hostname>
 
 Örnek için kullandığımız bilgisayar için aşağıdaki gibi bir giriş yapıyoruz.
 
 ::
 
-	192.168.3.70 evarobotserver
+	192.168.10.60 evarobotserver
 
 Kaydederek çıkmak için Ctrl + X tuş kombinasyonunu kullanıyoruz. Kaydetmek 
 isteyip istemediğimizi soracak Y tuşuna basıyoruz. Ardından dosya isminde değişiklik yapmadan Enter'a basıyoruz.

@@ -13,7 +13,7 @@ evarobot üzerindeki bumper'ı çalıştırmadan önce Evarobot'a ssh ile bağla
 ::
 
 	# evarobot
-	> ssh pi@evarobotDSK
+	> ssh pi@evarobot
 	> sudo -s
 
 Bumper sensörlerini çalıştırmak için aşağıdaki kodu terminalde çalıştırmak yeterli olacaktır. 
@@ -30,12 +30,12 @@ Bilgisayar ile evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 ::
 
 	# evarobot
-	> roslaunch master_discovery_fkie master_discovery.launch
+	> roslaunch evarobot_start master_discovery.launch
 
 ::
 
 	# evarobot
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evarobot_start master_sync.launch
 
 
 Bumper'ı Terminalden Okuma
@@ -46,12 +46,7 @@ Bilgisayar tarafında terminalden bumper sensörlerini okumak için senkronizasy
 ::
 
 	# pc
-	> roslaunch master_discovery_fkie master_discovery.launch
-
-::
-
-	# pc
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evapc_start sync.launch 
 
 Başka bir terminalde rostopic komutu ile bumper verisi okunabilir.
 

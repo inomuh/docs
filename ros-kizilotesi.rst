@@ -11,7 +11,7 @@ Evarobot üzerindeki kızılötesi sensörleri çalıştırmadan önce Evarobot'
 ::
 
 	# evarobot
-	> ssh pi@evarobotDSK
+	> ssh pi@evarobot
 	> sudo -s
 
 Kızılötesi sensörlerini çalıştırmak için aşağıdaki kodu terminalde çalıştırmak yeterli olacaktır. 
@@ -28,12 +28,12 @@ Bilgisayar ile Evarobot'un konuşabilmesi için multimaster_fkie paketinde keşi
 ::
 
 	# evarobot
-	> roslaunch master_discovery_fkie master_discovery.launch
+	> roslaunch evarobot_start master_discovery.launch
 
 ::
 
 	# evarobot
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evarobot_start master_sync.launch
 
 Kızılötesi Sensörlerini Terminalden Okuma
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,12 +43,7 @@ Bilgisayar tarafında terminalden kızılötesi sensörlerini okumak için senkr
 ::
 
 	# pc
-	> roslaunch master_discovery_fkie master_discovery.launch
-
-::
-
-	# pc
-	> roslaunch master_sync_fkie master_sync.launch
+	> roslaunch evapc_start sync.launch
 
 Başka bir terminalde rostopic komutu ile kızılötesi verisi okunabilir. 
 Varsayılan ayarlarda kullanılan topik ismi /sensor/ir<n> şeklindedir. 
